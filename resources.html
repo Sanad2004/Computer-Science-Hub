@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resources - Computer Science Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Computer Science Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="resources.html">Student Resources</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="resources-intro">
+        <h2>Welcome to Our Resources Library</h2>
+        <p>Explore a wealth of knowledge through e-books, lecture slides, study materials, and more. Enhance your learning with our curated resources, selected specifically for computer science students.</p>
+    </section>
+    <section class="upload-resources">
+        <h3>For Instructors: Upload Your Resources</h3>
+        <form action="php/upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="uploadedFile" id="uploadedFile">
+            <input type="submit" value="Upload File">
+        </form>
+    </section>
+    <section class="available-resources">
+        <h3>Available Resources</h3>
+        <ul>
+            <!-- Dynamically list files here -->
+            <li><a href="resources/file1.pdf" target="_blank">Introduction to Algorithms</a></li>
+            <li><a href="resources/file2.pdf" target="_blank">Python Programming Basics</a></li>
+            <!-- More resources can be added by the server-side script -->
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 Computer Science Hub</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
